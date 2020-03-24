@@ -106,6 +106,7 @@ exports.Checkbox = class Checkbox {
           }
         }
       });
+      targetElements[i].dispatchEvent(new Event('change'));
     }
 
     return;
