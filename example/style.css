@@ -1,0 +1,23 @@
+.wonderful-tab-title {
+  margin-bottom: -1px;
+}
+.wonderful-tab {
+  text-align: center;
+  color: #343a40;
+  border: 2px solid #343a40 !important;
+  border-bottom: 0px !important;
+  border-top-right-radius: 0rem !important;
+  border-top-left-radius: 0rem !important;
+}
+.wonderful-tab:hover {
+  color: #343a40;
+}
+.wonderful-tab.active {
+  background-color: #343a40 !important;
+  color: white !important;
+}
+
+.wonderful-tab-content {
+  border: 2px solid #343a40;
+  padding: 30px;
+}

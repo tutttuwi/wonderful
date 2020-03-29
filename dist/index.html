@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="demoport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
@@ -15,204 +15,304 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="../example/style.css" />
     <title>Example Page | Wonderful.js</title>
   </head>
-  <body>
-    <main role="main">
-      <div class="jumbotron bg-dark text-white">
+  <body class="d-flex align-items-center flex-column min-vh-100">
+    <main role="main" class="flex-grow-1 w-100">
+      <div class="jumbotron bg-dark text-white" style="border-radius:0">
         <div class="container">
-          <h1 class="display-3 text-white"><i class="fas fa-dog"></i> Wonderful.js</h1>
+          <h1 class="display-4 text-white"><i class="fas fa-dog"></i> Wonderful.js</h1>
           <p>
             show some example...
           </p>
           <p>
-            <a class="btn btn-dark btn-lg" href="#" role="button"><i class="fab fa-github"></i></a>
+            <a
+              class="btn btn-dark btn-lg"
+              target="_blank"
+              href="https://github.com/tutttuwi/wonderful"
+              role="button"
+            >
+              <span class="fa-stack">
+                <i class="far fa-square fa-stack-2x"></i>
+                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
           </p>
         </div>
       </div>
 
       <div class="container">
-        <!-- Example row of columns -->
-        <h2 class="">CHECKBOX</h2>
-        <div class="row">
-          <div class="col-md-12 mb-3">
-            <h3>You can use icon in fontawesome.</h3>
-            <table class="table table-hover table-light">
-              <thead class="bg-dark text-white">
-                <tr>
-                  <td>icon</td>
-                  <td>class</td>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><i class="fas fa-check"></i></td>
-                  <td>fas fa-check</td>
-                </tr>
-                <tr>
-                  <td><i class="fas fa-check-square"></i></td>
-                  <td>fas fa-check-square</td>
-                </tr>
-                <tr>
-                  <td><i class="far fa-check-square"></i></td>
-                  <td>far fa-check-square</td>
-                </tr>
-                <tr>
-                  <td><i class="fas fa-check-double"></i></td>
-                  <td>fas fa-check-double</td>
-                </tr>
-                <tr>
-                  <td><i class="fas fa-square"></i></td>
-                  <td>fas fa-square</td>
-                </tr>
-                <tr>
-                  <td><i class="far fa-square"></i></td>
-                  <td>far fa-square</td>
-                </tr>
-                <tr>
-                  <td><i class="fas fa-square-full"></i></td>
-                  <td>fas fa-square-full</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+        <section>
+          <h2 class="">CHECKBOX</h2>
+          <div class="row p-2">
+            <div class="col-md-12 mb-3">
+              <h3>You can use icon in fontawesome.</h3>
+              <div class="row">
+                <div
+                  class="col-4 col-md-3 text-center my-2"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title="fas fa-check"
+                >
+                  <i class="fas fa-check fa-2x"></i>
+                </div>
+                <div
+                  class="col-4 col-md-3 text-center my-2"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title="fas fa-check-square"
+                >
+                  <i class="fas fa-check-square fa-2x"></i>
+                </div>
+                <div
+                  class="col-4 col-md-3 text-center my-2"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title="far fa-check-square"
+                >
+                  <i class="far fa-check-square fa-2x"></i>
+                </div>
+                <div
+                  class="col-4 col-md-3 text-center my-2"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title="fas fa-check-double"
+                >
+                  <i class="fas fa-check-double fa-2x"></i>
+                </div>
+                <div
+                  class="col-4 col-md-3 text-center my-2"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title="fas fa-square"
+                >
+                  <i class="fas fa-square fa-2x"></i>
+                </div>
+                <div
+                  class="col-4 col-md-3 text-center my-2"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title="far fa-square"
+                >
+                  <i class="far fa-square fa-2x"></i>
+                </div>
+                <div
+                  class="col-4 col-md-3 text-center my-2"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title="fas fa-check"
+                >
+                  <i class="fas fa-check fa-2x"></i>
+                </div>
+                <div
+                  class="col-4 col-md-3 text-center my-2"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title="fas fa-square-full"
+                >
+                  <i class="fas fa-square-full fa-2x"></i>
+                </div>
+              </div>
+            </div>
 
-          <!-- Default -->
-          <div class="col-md-4 mb-3">
-            <h3>Default</h3>
-            <div class="form-check">
-              <input
-                type="checkbox"
-                class="form-check-input"
-                　value=""
-                name=""
-                id="check1-1"
-                checked="checked"
-              />
-              <label class="form-check-label" for="check1-1">ラベル</label>
+            <!-- Default -->
+            <div class="col-12 mb-3">
+              <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                  <div
+                    class="mr-auto d-flex align-items-center justify-content-center bg-dark text-white px-3 w-25 wonderful-tab-title"
+                  >
+                    Default
+                  </div>
+                  <a
+                    class="nav-item nav-link wonderful-tab w-25"
+                    id="default-usage-tab"
+                    data-toggle="tab"
+                    href="#default-usage"
+                    role="tab"
+                    aria-controls="default-usage"
+                    aria-selected="true"
+                    >Usage</a
+                  >
+                  <a
+                    class="nav-item nav-link active wonderful-tab w-25"
+                    id="default-demo-tab"
+                    data-toggle="tab"
+                    href="#default-demo"
+                    role="tab"
+                    aria-controls="default-demo"
+                    aria-selected="false"
+                    >Demo</a
+                  >
+                </div>
+              </nav>
+              <div class="tab-content wonderful-tab-content">
+                <div
+                  class="tab-pane fade"
+                  id="default-usage"
+                  role="tabpanel"
+                  aria-labelledby="default-usage-tab"
+                >
+                  usage
+                </div>
+                <div
+                  class="tab-pane fade show active"
+                  id="default-demo"
+                  role="tabpanel"
+                  aria-labelledby="default-demoe-tab"
+                >
+                  <div class="form-check">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      　value=""
+                      name=""
+                      id="check1-1"
+                      checked="checked"
+                    />
+                    <label class="form-check-label" for="check1-1">ラベル</label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      　value=""
+                      name=""
+                      id="check1-2"
+                    />
+                    <label class="form-check-label" for="check1-2">ラベル</label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      　value=""
+                      name=""
+                      id="check1-3"
+                    />
+                    <label class="form-check-label" for="check1-3">ラベル</label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      　value=""
+                      name=""
+                      id="check1-4"
+                      disabled
+                    />
+                    <label class="form-check-label" for="check1-4">ラベル (disabled)</label>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="form-check">
-              <input type="checkbox" class="form-check-input" 　value="" name="" id="check1-2" />
-              <label class="form-check-label" for="check1-2">ラベル</label>
+
+            <!-- Stack -->
+            <div class="col-md-4 mb-3">
+              <h3>Default (isStack)</h3>
+              <div class="form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input wonderful-check-stack"
+                  　value=""
+                  name=""
+                  id="check2-1"
+                  checked="checked"
+                />
+                <label class="form-check-label" for="check2-1">ラベル</label>
+              </div>
+              <div class="form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input wonderful-check-stack"
+                  　value=""
+                  name=""
+                  id="check2-2"
+                />
+                <label class="form-check-label" for="check2-2">ラベル</label>
+              </div>
+              <div class="form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input wonderful-check-stack"
+                  　value=""
+                  name=""
+                  id="check2-3"
+                />
+                <label class="form-check-label" for="check2-3">ラベル</label>
+              </div>
+              <div class="form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input wonderful-check-stack"
+                  　value=""
+                  name=""
+                  id="check2-4"
+                  disabled
+                />
+                <label class="form-check-label" for="check2-4">ラベル (disabled)</label>
+              </div>
             </div>
-            <div class="form-check">
-              <input type="checkbox" class="form-check-input" 　value="" name="" id="check1-3" />
-              <label class="form-check-label" for="check1-3">ラベル</label>
-            </div>
-            <div class="form-check">
-              <input
-                type="checkbox"
-                class="form-check-input"
-                　value=""
-                name=""
-                id="check1-4"
-                disabled
-              />
-              <label class="form-check-label" for="check1-4">ラベル (disabled)</label>
+
+            <!-- Color -->
+            <div class="col-md-4 mb-3">
+              <h3>Default(Color)</h3>
+              <div class="form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input wonderful-check-color-blue"
+                  　value=""
+                  name=""
+                  id="check3-1"
+                  checked="checked"
+                />
+                <label class="form-check-label" for="check3-1">ラベル</label>
+              </div>
+              <div class="form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input wonderful-check-color-red"
+                  　value=""
+                  name=""
+                  id="check3-2"
+                />
+                <label class="form-check-label" for="check3-2">ラベル</label>
+              </div>
+              <div class="form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input wonderful-check-color-green"
+                  　value=""
+                  name=""
+                  id="check3-3"
+                />
+                <label class="form-check-label" for="check3-3">ラベル</label>
+              </div>
+              <div class="form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input wonderful-check-color-purple"
+                  　value=""
+                  name=""
+                  id="check3-4"
+                />
+                <label class="form-check-label" for="check3-4">ラベル</label>
+              </div>
             </div>
           </div>
-
-          <!-- Stack -->
-          <div class="col-md-4 mb-3">
-            <h3>Default (isStack)</h3>
-            <div class="form-check">
-              <input
-                type="checkbox"
-                class="form-check-input wonderful-check-stack"
-                　value=""
-                name=""
-                id="check2-1"
-                checked="checked"
-              />
-              <label class="form-check-label" for="check2-1">ラベル</label>
-            </div>
-            <div class="form-check">
-              <input
-                type="checkbox"
-                class="form-check-input wonderful-check-stack"
-                　value=""
-                name=""
-                id="check2-2"
-              />
-              <label class="form-check-label" for="check2-2">ラベル</label>
-            </div>
-            <div class="form-check">
-              <input
-                type="checkbox"
-                class="form-check-input wonderful-check-stack"
-                　value=""
-                name=""
-                id="check2-3"
-              />
-              <label class="form-check-label" for="check2-3">ラベル</label>
-            </div>
-            <div class="form-check">
-              <input
-                type="checkbox"
-                class="form-check-input wonderful-check-stack"
-                　value=""
-                name=""
-                id="check2-4"
-                disabled
-              />
-              <label class="form-check-label" for="check2-4">ラベル (disabled)</label>
-            </div>
-          </div>
-
-          <!-- Color -->
-          <div class="col-md-4 mb-3">
-            <h3>Default(Color)</h3>
-            <div class="form-check">
-              <input
-                type="checkbox"
-                class="form-check-input wonderful-check-color-blue"
-                　value=""
-                name=""
-                id="check3-1"
-                checked="checked"
-              />
-              <label class="form-check-label" for="check3-1">ラベル</label>
-            </div>
-            <div class="form-check">
-              <input
-                type="checkbox"
-                class="form-check-input wonderful-check-color-red"
-                　value=""
-                name=""
-                id="check3-2"
-              />
-              <label class="form-check-label" for="check3-2">ラベル</label>
-            </div>
-            <div class="form-check">
-              <input
-                type="checkbox"
-                class="form-check-input wonderful-check-color-green"
-                　value=""
-                name=""
-                id="check3-3"
-              />
-              <label class="form-check-label" for="check3-3">ラベル</label>
-            </div>
-            <div class="form-check">
-              <input
-                type="checkbox"
-                class="form-check-input wonderful-check-color-purple"
-                　value=""
-                name=""
-                id="check3-4"
-              />
-              <label class="form-check-label" for="check3-4">ラベル</label>
-            </div>
-          </div>
-        </div>
-
-        <hr />
+        </section>
       </div>
       <!-- /container -->
     </main>
 
-    <footer class="container">
-      <p>&copy; wonderful.js 2020-2020</p>
+    <footer class="container-fluid bg-dark text-white">
+      <div class="container p-3">
+        <small
+          >&copy; wonderful.js 2020-2020 | produced by
+          <a href="http://tutttuwi.me"><b>tutttuwi</b></a></small
+        >
+      </div>
     </footer>
 
     <script
@@ -230,7 +330,7 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-  <script type="text/javascript" src="main.7db087bd85fb9b3ead09.js"></script></body>
+  <script type="text/javascript" src="main.8b3f3d3356d5d22515d0.js"></script></body>
   <script>
     new Wonderful.Checkbox({ targetClass: 'wonderful-check-stack', isStack: true }).init();
     new Wonderful.Checkbox({
@@ -253,5 +353,8 @@
       bfColor: 'purple',
       afColor: 'purple'
     }).init();
+    $(function() {
+      $('[data-toggle="tooltip"]').tooltip();
+    });
   </script>
 </html>
