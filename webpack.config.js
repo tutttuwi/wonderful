@@ -2,6 +2,7 @@
 const path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   mode: 'development',
@@ -15,7 +16,8 @@ module.exports = {
   output: {
     // path: path.join(__dirname, '/dist'),
     // path: __dirname + '/dist',
-    filename: '[name].[hash].js',
+    // filename: '[name].[hash].js',
+    filename: 'wonderful.js',
     library: 'Wonderful',
     // libraryExport: 'default',
     libraryTarget: 'umd'
@@ -24,7 +26,8 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     // new webpack.optimize.UglifyJsPlugin()
-    new HtmlWebpackPlugin({ template: '../example/index.html', inject: 'body' })
+    new HtmlWebpackPlugin({ template: '../example/index.html', inject: 'body' }),
+    new CopyPlugin([{ from: 'css/*.css', to: '../dist' }])
   ],
 
   module: {

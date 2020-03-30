@@ -1,3 +1,20 @@
+.header-title-text {
+  font-size: 5rem;
+  letter-spacing: -5px;
+  line-height: 140px;
+  font-weight: bold;
+}
+.header-title-author {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  font-size: 1.5rem;
+}
+.header-title-author:hover {
+  text-decoration: none;
+  color: steelblue;
+}
+
 .wonderful-tab-title {
   margin-bottom: -1px;
 }
@@ -20,4 +37,13 @@
 .wonderful-tab-content {
   border: 2px solid #343a40;
   padding: 30px;
+}
+
+.footer-author {
+  text-decoration: none;
+  color: white;
+}
+.footer-author:hover {
+  text-decoration: none;
+  color: steelblue;
 }
