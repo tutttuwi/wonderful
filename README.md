@@ -1,5 +1,5 @@
 <p align="center">
-  <img style="width: 300px;"src="./src/img/readme-image-dog.png">
+  <img style="width: 100px;"src="./src/img/readme-image-dog.png">
   <br/>
   <h1 align="center">Wonderful.js</h1>
 </p>
@@ -29,7 +29,7 @@ no configuration. just import **wonderful.js**.
 
 ## :clap: Quotation
 
-- header image <https://illustrain.com/?p=17421>
+header image : <https://illustrain.com/?p=17421>
 
 ## :running: TBI (to be implemented)
 
@@ -39,7 +39,7 @@ no configuration. just import **wonderful.js**.
 
 ## :ticket: Licence
 
-[![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE) 2020 t-tsutsui
+[![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
 
 ## :jp: Author
 
