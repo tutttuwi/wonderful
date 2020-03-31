@@ -210,7 +210,7 @@ section {
   animation-name: upto_bone;
   animation-timing-function: linear;
   /* animation-timing-function: ease; */
-  animation-duration: 1s;
+  animation-duration: 1.5s;
   animation-iteration-count: infinite;
   /* animation: 3s linear 1s infinite alternate slidein; */
 }
