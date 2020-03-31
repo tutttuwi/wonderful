@@ -15,10 +15,14 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/mono-blue.min.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
-    <title>Example Page | Wonderful.js</title>
+    <title>Introduction Page | Wonderful.js</title>
   </head>
-  <body class="d-flex align-items-center flex-column min-vh-100">
+  <body class="d-flex align-items-center flex-column min-vh-100" id="top">
     <main role="main" class="flex-grow-1 w-100">
       <div class="jumbotron bg-dark text-white" style="border-radius:0">
         <div class="container text-center">
@@ -44,13 +48,90 @@
         </div>
       </div>
 
-      <div class="container">
+      <div class="wrapper">
         <section>
-          <h2 class="">CHECKBOX</h2>
+          <div class="wonderful-card">
+            <div class="wonderful-card-header">
+              <h2>FEATURES</h2>
+            </div>
+            <div class="wonderful-card-body">
+              <ul class="list-features">
+                <li>
+                  Upon importing wonderful.js, you can use this! - without JS Libraries such as
+                  jQuery
+                </li>
+                <li>Customize icon following fontawesome</li>
+                <li>Device support - (Not yet verified)</li>
+                <li>Some element support - checkbox (TBI:radio,input)</li>
+              </ul>
+            </div>
+            <div class="wonderful-card-footer">
+              <div class="d-flex social">
+                <div class="d-flex align-items-center mr-auto">
+                  <span><a href="https://github.com/tutttuwi/wonderful">LATEST VERSION</a></span>
+                </div>
+                <div class="d-flex align-items-center features-icon">
+                  <div class="d-flex mx-2">
+                    <iframe
+                      src="https://ghbtns.com/github-btn.html?user=tutttuwi&repo=wonderful&type=star&count=true"
+                      frameborder="0"
+                      scrolling="0"
+                      width="170px"
+                      height="20px"
+                    ></iframe>
+                  </div>
+                  <div class="d-flex mx-2">
+                    <a
+                      href="https://twitter.com/tutttwien?ref_src=twsrc%5Etfw"
+                      class="twitter-follow-button"
+                      data-show-count="false"
+                      >Follow @tutttwien</a
+                    >
+                  </div>
+                  <div class="d-flex mx-2">
+                    <a
+                      href="https://twitter.com/intent/tweet?ref_src=twsrc%5Etfw"
+                      class="twitter-hashtag-button"
+                      data-text="simplify customizing element using fontawesome #wonderful #fontawesome"
+                      data-related="tutttwien"
+                      data-show-count="false"
+                      >Tweet</a
+                    >
+                  </div>
+                  <script
+                    async
+                    src="https://platform.twitter.com/widgets.js"
+                    charset="utf-8"
+                  ></script>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="wonderful-card">
+            <div class="wonderful-card-header">
+              <h2>REQUIREMENT <small>only fontawesome</small></h2>
+            </div>
+            <div class="wonderful-card-body">
+              you must import <strong>fontawesome</strong> in your header element. as follows:
+              <pre>
+                <code class="html">
+                  &lt;link rel="stylesheet"
+                  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+                  integrity="sha256-UzFD2WYH2U1dQpKDjjZK72VtPeWP50NoJjd26rnAdUI="
+                  crossorigin="anonymous"/&gt;
+                </code>
+              </pre>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2 class="element-label">CHECKBOX</h2>
           <div class="row p-2">
             <div class="col-md-12 mb-3">
               <h3>You can use icon in fontawesome.</h3>
-              <div class="row">
+              <div class="row no-gutters icon-area">
                 <div
                   class="col-4 col-md-3 text-center my-2"
                   data-toggle="tooltip"
@@ -123,7 +204,7 @@
               <nav>
                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
                   <div
-                    class="mr-auto d-flex align-items-center justify-content-center bg-dark text-white px-3 w-25 wonderful-tab-title"
+                    class="mr-auto d-flex align-items-center justify-content-center px-3 w-25 wonderful-tab-title"
                   >
                     Default
                   </div>
@@ -135,6 +216,7 @@
                     role="tab"
                     aria-controls="default-usage"
                     aria-selected="true"
+                    style="margin-right:-2px"
                     >Usage</a
                   >
                   <a
@@ -149,14 +231,24 @@
                   >
                 </div>
               </nav>
-              <div class="tab-content wonderful-tab-content">
+              <div class="tab-content wonderful-tab-content bg-white">
                 <div
                   class="tab-pane fade"
                   id="default-usage"
                   role="tabpanel"
                   aria-labelledby="default-usage-tab"
                 >
-                  usage
+                  <ul class="list-usages">
+                    <li>only import <strong>wonderful.js</strong>!! bottom of body</li>
+                    <div>
+                      <pre>
+                      <code class="html">
+                        &lt;script type="text/javascript" src="wonderful.js"&gt;&lt;/script&gt;
+                      </code>
+                     </pre>
+                    </div>
+                    <li>That's all !!</li>
+                  </ul>
                 </div>
                 <div
                   class="tab-pane fade show active"
@@ -164,146 +256,478 @@
                   role="tabpanel"
                   aria-labelledby="default-demoe-tab"
                 >
-                  <div class="form-check">
-                    <input
-                      type="checkbox"
-                      class="form-check-input"
-                      　value=""
-                      name=""
-                      id="check1-1"
-                      checked="checked"
-                    />
-                    <label class="form-check-label" for="check1-1">ラベル</label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      type="checkbox"
-                      class="form-check-input"
-                      　value=""
-                      name=""
-                      id="check1-2"
-                    />
-                    <label class="form-check-label" for="check1-2">ラベル</label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      type="checkbox"
-                      class="form-check-input"
-                      　value=""
-                      name=""
-                      id="check1-3"
-                    />
-                    <label class="form-check-label" for="check1-3">ラベル</label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      type="checkbox"
-                      class="form-check-input"
-                      　value=""
-                      name=""
-                      id="check1-4"
-                      disabled
-                    />
-                    <label class="form-check-label" for="check1-4">ラベル (disabled)</label>
+                  <div class="row no-gutters">
+                    <div class="col-6">
+                      <h4 class="mb-3">Live</h4>
+                      <div class="form-check wonderful-form-group">
+                        <input
+                          type="checkbox"
+                          class="form-check-input"
+                          　value=""
+                          name=""
+                          id="check1-1"
+                        />
+                        <label class="form-check-label" for="check1-1">checkbox</label>
+                      </div>
+                      <div class="form-check wonderful-form-group">
+                        <input
+                          type="checkbox"
+                          class="form-check-input"
+                          　value=""
+                          name=""
+                          id="check1-2"
+                          checked="checked"
+                        />
+                        <label class="form-check-label" for="check1-2">checkbox(checked)</label>
+                      </div>
+                      <div class="form-check wonderful-form-group">
+                        <input
+                          type="checkbox"
+                          class="form-check-input"
+                          　value=""
+                          name=""
+                          id="check1-3"
+                          disabled
+                        />
+                        <label class="form-check-label" for="check1-3">Disabled</label>
+                      </div>
+                      <div class="form-check wonderful-form-group">
+                        <input
+                          type="checkbox"
+                          class="form-check-input"
+                          　value=""
+                          name=""
+                          id="check1-4"
+                          disabled
+                          checked="checked"
+                        />
+                        <label class="form-check-label" for="check1-4">Disabled & Checked</label>
+                      </div>
+                    </div>
+                    <div class="col-6 state-elements-wrapper">
+                      <div class="state-elements-overlay"></div>
+                      <h4 class="mb-3">State</h4>
+                      <div class="form-check wonderful-form-group">
+                        <input
+                          type="checkbox"
+                          class="form-check-input"
+                          　value=""
+                          name=""
+                          id="check1-1"
+                        />
+                        <label class="form-check-label" for="check1-1">Normal</label>
+                      </div>
+                      <div class="form-check wonderful-form-group">
+                        <input
+                          type="checkbox"
+                          class="form-check-input"
+                          　value=""
+                          name=""
+                          id="check1-1"
+                        />
+                        <label class="form-check-label" for="check1-1">Hover</label>
+                      </div>
+                      <div class="form-check wonderful-form-group">
+                        <input
+                          type="checkbox"
+                          class="form-check-input"
+                          　value=""
+                          name=""
+                          id="check1-2"
+                          checked="checked"
+                        />
+                        <label class="form-check-label" for="check1-2">Checked</label>
+                      </div>
+                      <div class="form-check wonderful-form-group">
+                        <input
+                          type="checkbox"
+                          class="form-check-input"
+                          　value=""
+                          name=""
+                          id="check1-3"
+                          disabled
+                        />
+                        <label class="form-check-label" for="check1-3">Disabled</label>
+                      </div>
+                      <div class="form-check wonderful-form-group">
+                        <input
+                          type="checkbox"
+                          class="form-check-input"
+                          　value=""
+                          name=""
+                          id="check1-4"
+                          disabled
+                          checked="checked"
+                        />
+                        <label class="form-check-label" for="check1-4">Disabled & Checked</label>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
 
             <!-- Stack -->
-            <div class="col-md-4 mb-3">
-              <h3>Default (isStack)</h3>
-              <div class="form-check">
-                <input
-                  type="checkbox"
-                  class="form-check-input wonderful-check-stack"
-                  　value=""
-                  name=""
-                  id="check2-1"
-                  checked="checked"
-                />
-                <label class="form-check-label" for="check2-1">ラベル</label>
-              </div>
-              <div class="form-check">
-                <input
-                  type="checkbox"
-                  class="form-check-input wonderful-check-stack"
-                  　value=""
-                  name=""
-                  id="check2-2"
-                />
-                <label class="form-check-label" for="check2-2">ラベル</label>
-              </div>
-              <div class="form-check">
-                <input
-                  type="checkbox"
-                  class="form-check-input wonderful-check-stack"
-                  　value=""
-                  name=""
-                  id="check2-3"
-                />
-                <label class="form-check-label" for="check2-3">ラベル</label>
-              </div>
-              <div class="form-check">
-                <input
-                  type="checkbox"
-                  class="form-check-input wonderful-check-stack"
-                  　value=""
-                  name=""
-                  id="check2-4"
-                  disabled
-                />
-                <label class="form-check-label" for="check2-4">ラベル (disabled)</label>
+            <div class="col-12 mb-3">
+              <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                  <div
+                    class="mr-auto d-flex align-items-center justify-content-center px-3 w-25 wonderful-tab-title"
+                  >
+                    Stack
+                  </div>
+                  <a
+                    class="nav-item nav-link wonderful-tab w-25"
+                    id="stack-usage-tab"
+                    data-toggle="tab"
+                    href="#stack-usage"
+                    role="tab"
+                    aria-controls="stack-usage"
+                    aria-selected="true"
+                    style="margin-right:-2px"
+                    >Usage</a
+                  >
+                  <a
+                    class="nav-item nav-link active wonderful-tab w-25"
+                    id="stack-demo-tab"
+                    data-toggle="tab"
+                    href="#stack-demo"
+                    role="tab"
+                    aria-controls="stack-demo"
+                    aria-selected="false"
+                    >Demo</a
+                  >
+                </div>
+              </nav>
+              <div class="tab-content wonderful-tab-content bg-white">
+                <div
+                  class="tab-pane fade"
+                  id="stack-usage"
+                  role="tabpanel"
+                  aria-labelledby="stack-usage-tab"
+                >
+                  <ul class="list-usages">
+                    <li>import <strong>wonderful.js</strong>!! bottom of body</li>
+                    <div>
+                      <pre>
+                      <code class="html">&lt;script type="text/javascript" src="wonderful.js"&gt;&lt;/script&gt;</code>
+                     </pre>
+                    </div>
+                    <li>configration as below</li>
+                    <pre>
+                      <code class="javascript">new Wonderful.Checkbox({ targetClass: 'wonderful-check-stack', isStack: true }).init()</code>
+                     </pre>
+                  </ul>
+                </div>
+                <div
+                  class="tab-pane fade show active"
+                  id="stack-demo"
+                  role="tabpanel"
+                  aria-labelledby="stack-demoe-tab"
+                >
+                  <div class="row no-gutters">
+                    <div class="col-6">
+                      <h4 class="mb-3">Live</h4>
+                      <div class="form-check wonderful-form-group">
+                        <input
+                          type="checkbox"
+                          class="form-check-input wonderful-check-stack"
+                          　value=""
+                          name=""
+                          id="check2-1"
+                        />
+                        <label class="form-check-label" for="check2-1">checkbox</label>
+                      </div>
+                      <div class="form-check wonderful-form-group">
+                        <input
+                          type="checkbox"
+                          class="form-check-input wonderful-check-stack"
+                          　value=""
+                          name=""
+                          id="check2-2"
+                          checked="checked"
+                        />
+                        <label class="form-check-label" for="check2-2">checkbox(checked)</label>
+                      </div>
+                      <div class="form-check wonderful-form-group">
+                        <input
+                          type="checkbox"
+                          class="form-check-input wonderful-check-stack"
+                          　value=""
+                          name=""
+                          id="check2-3"
+                          disabled
+                        />
+                        <label class="form-check-label" for="check2-3">Disabled</label>
+                      </div>
+                      <div class="form-check wonderful-form-group">
+                        <input
+                          type="checkbox"
+                          class="form-check-input wonderful-check-stack"
+                          　value=""
+                          name=""
+                          id="check2-4"
+                          disabled
+                          checked="checked"
+                        />
+                        <label class="form-check-label" for="check2-4">Disabled & Checked</label>
+                      </div>
+                    </div>
+                    <div class="col-6 state-elements-wrapper">
+                      <div class="state-elements-overlay"></div>
+                      <h4 class="mb-3">State</h4>
+                      <div class="form-check wonderful-form-group">
+                        <input
+                          type="checkbox"
+                          class="form-check-input wonderful-check-stack"
+                          　value=""
+                          name=""
+                          id="check2-1"
+                        />
+                        <label class="form-check-label" for="check2-1">Normal</label>
+                      </div>
+                      <div class="form-check wonderful-form-group">
+                        <input
+                          type="checkbox"
+                          class="form-check-input wonderful-check-stack"
+                          　value=""
+                          name=""
+                          id="check2-1"
+                        />
+                        <label class="form-check-label" for="check2-1">Hover</label>
+                      </div>
+                      <div class="form-check wonderful-form-group">
+                        <input
+                          type="checkbox"
+                          class="form-check-input wonderful-check-stack"
+                          　value=""
+                          name=""
+                          id="check2-2"
+                          checked="checked"
+                        />
+                        <label class="form-check-label" for="check2-2">Checked</label>
+                      </div>
+                      <div class="form-check wonderful-form-group">
+                        <input
+                          type="checkbox"
+                          class="form-check-input wonderful-check-stack"
+                          　value=""
+                          name=""
+                          id="check2-3"
+                          disabled
+                        />
+                        <label class="form-check-label" for="check2-3">Disabled</label>
+                      </div>
+                      <div class="form-check wonderful-form-group">
+                        <input
+                          type="checkbox"
+                          class="form-check-input wonderful-check-stack"
+                          　value=""
+                          name=""
+                          id="check2-4"
+                          disabled
+                          checked="checked"
+                        />
+                        <label class="form-check-label" for="check2-4">Disabled & Checked</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 
             <!-- Color -->
-            <div class="col-md-4 mb-3">
-              <h3>Default(Color)</h3>
-              <div class="form-check">
-                <input
-                  type="checkbox"
-                  class="form-check-input wonderful-check-color-blue"
-                  　value=""
-                  name=""
-                  id="check3-1"
-                  checked="checked"
-                />
-                <label class="form-check-label" for="check3-1">ラベル</label>
-              </div>
-              <div class="form-check">
-                <input
-                  type="checkbox"
-                  class="form-check-input wonderful-check-color-red"
-                  　value=""
-                  name=""
-                  id="check3-2"
-                />
-                <label class="form-check-label" for="check3-2">ラベル</label>
-              </div>
-              <div class="form-check">
-                <input
-                  type="checkbox"
-                  class="form-check-input wonderful-check-color-green"
-                  　value=""
-                  name=""
-                  id="check3-3"
-                />
-                <label class="form-check-label" for="check3-3">ラベル</label>
-              </div>
-              <div class="form-check">
-                <input
-                  type="checkbox"
-                  class="form-check-input wonderful-check-color-purple"
-                  　value=""
-                  name=""
-                  id="check3-4"
-                />
-                <label class="form-check-label" for="check3-4">ラベル</label>
+            <div class="col-12 mb-3">
+              <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                  <div
+                    class="mr-auto d-flex align-items-center justify-content-center px-3 w-25 wonderful-tab-title"
+                  >
+                    Color
+                  </div>
+                  <a
+                    class="nav-item nav-link wonderful-tab w-25"
+                    id="color-usage-tab"
+                    data-toggle="tab"
+                    href="#color-usage"
+                    role="tab"
+                    aria-controls="color-usage"
+                    aria-selected="true"
+                    style="margin-right:-2px"
+                    >Usage</a
+                  >
+                  <a
+                    class="nav-item nav-link active wonderful-tab w-25"
+                    id="color-demo-tab"
+                    data-toggle="tab"
+                    href="#color-demo"
+                    role="tab"
+                    aria-controls="color-demo"
+                    aria-selected="false"
+                    >Demo</a
+                  >
+                </div>
+              </nav>
+              <div class="tab-content wonderful-tab-content bg-white">
+                <div
+                  class="tab-pane fade"
+                  id="color-usage"
+                  role="tabpanel"
+                  aria-labelledby="color-usage-tab"
+                >
+                  <ul class="list-usages">
+                    <li>import <strong>wonderful.js</strong>!! bottom of body</li>
+                    <div>
+                      <pre>
+                      <code class="html">&lt;script type="text/javascript" src="wonderful.js"&gt;&lt;/script&gt;</code>
+                     </pre>
+                    </div>
+                    <li>configration as below</li>
+                    <pre>
+                      <code class="javascript">
+  new Wonderful.Checkbox({
+    targetClass: 'wonderful-check-color-blue',
+    bfColor: 'blue',
+    afColor: 'blue'
+  }).init();
+  new Wonderful.Checkbox({
+    targetClass: 'wonderful-check-color-red',
+    bfColor: 'red',
+    afColor: 'red'
+  }).init();
+  new Wonderful.Checkbox({
+    targetClass: 'wonderful-check-color-green',
+    bfColor: 'green',
+    afColor: 'green'
+  }).init();
+  new Wonderful.Checkbox({
+    targetClass: 'wonderful-check-color-purple',
+    bfColor: 'purple',
+    afColor: 'purple'
+  }).init();
+  $(function() {
+    $('[data-toggle="tooltip"]').tooltip();
+  });</code>
+                     </pre>
+                  </ul>
+                </div>
+                <div
+                  class="tab-pane fade show active"
+                  id="color-demo"
+                  role="tabpanel"
+                  aria-labelledby="color-demoe-tab"
+                >
+                  <div class="row no-gutters">
+                    <div class="col-6">
+                      <h4 class="mb-3">Live</h4>
+                      <div class="form-check wonderful-form-group">
+                        <input
+                          type="checkbox"
+                          class="form-check-input wonderful-check-color-blue"
+                          　value=""
+                          name=""
+                          id="check3-1"
+                        />
+                        <label class="form-check-label" for="check3-1">Blue</label>
+                      </div>
+                      <div class="form-check wonderful-form-group">
+                        <input
+                          type="checkbox"
+                          class="form-check-input wonderful-check-color-red"
+                          value=""
+                          name=""
+                          id="check3-2"
+                          checked="checked"
+                        />
+                        <label class="form-check-label" for="check3-2">Red(checked)</label>
+                      </div>
+                      <div class="form-check wonderful-form-group">
+                        <input
+                          type="checkbox"
+                          class="form-check-input wonderful-check-color-green"
+                          　value=""
+                          name=""
+                          id="check3-3"
+                          disabled
+                        />
+                        <label class="form-check-label" for="check3-3">Green(disabled)</label>
+                      </div>
+                      <div class="form-check wonderful-form-group">
+                        <input
+                          type="checkbox"
+                          class="form-check-input wonderful-check-color-purple"
+                          　value=""
+                          name=""
+                          id="check3-4"
+                          checked="checked"
+                          disabled
+                        />
+                        <label class="form-check-label" for="check3-4"
+                          >Purple(checked & disabled)</label
+                        >
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <h4 class="mb-3">Other</h4>
+                      <div class="form-check wonderful-form-group">
+                        <input
+                          type="checkbox"
+                          class="form-check-input wonderful-check-color-yellow"
+                          　value=""
+                          name=""
+                          id="check3-5"
+                        />
+                        <label class="form-check-label" for="check3-5">Yellow</label>
+                      </div>
+                      <div class="form-check wonderful-form-group">
+                        <input
+                          type="checkbox"
+                          class="form-check-input wonderful-check-color-navy"
+                          　value=""
+                          name=""
+                          id="check3-6"
+                        />
+                        <label class="form-check-label" for="check3-6">Navy</label>
+                      </div>
+                      <div class="form-check wonderful-form-group">
+                        <input
+                          type="checkbox"
+                          class="form-check-input wonderful-check-color-lime"
+                          　value=""
+                          name=""
+                          id="check3-7"
+                        />
+                        <label class="form-check-label" for="check3-7">lime</label>
+                      </div>
+                      <div class="form-check wonderful-form-group">
+                        <input
+                          type="checkbox"
+                          class="form-check-input wonderful-check-color-fuchsia"
+                          　value=""
+                          name=""
+                          id="check3-8"
+                        />
+                        <label class="form-check-label" for="check3-8">Fuchsia</label>
+                      </div>
+                      <div class="form-check wonderful-form-group">
+                        <input
+                          type="checkbox"
+                          class="form-check-input wonderful-check-color-maroon"
+                          　value=""
+                          name=""
+                          id="check3-9"
+                        />
+                        <label class="form-check-label" for="check3-9">maroon</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </section>
+        <!-- radio -->
+        <section></section>
       </div>
       <!-- /container -->
     </main>
@@ -316,6 +740,10 @@
         >
       </div>
     </footer>
+
+    <div id="goto-top" class="go-top flex-column justify-content-center fade">
+      <i class="fas fa-bone" onclick="gotoTop();"></i>
+    </div>
 
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -332,7 +760,11 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"></script>
   </body>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
   <script>
     new Wonderful.Checkbox({ targetClass: 'wonderful-check-stack', isStack: true }).init();
     new Wonderful.Checkbox({
@@ -355,8 +787,50 @@
       bfColor: 'purple',
       afColor: 'purple'
     }).init();
+    new Wonderful.Checkbox({
+      targetClass: 'wonderful-check-color-yellow',
+      bfColor: 'yellow',
+      afColor: 'yellow'
+    }).init();
+    new Wonderful.Checkbox({
+      targetClass: 'wonderful-check-color-navy',
+      bfColor: 'navy',
+      afColor: 'navy'
+    }).init();
+    new Wonderful.Checkbox({
+      targetClass: 'wonderful-check-color-lime',
+      bfColor: 'lime',
+      afColor: 'lime'
+    }).init();
+    new Wonderful.Checkbox({
+      targetClass: 'wonderful-check-color-fuchsia',
+      bfColor: 'fuchsia',
+      afColor: 'fuchsia'
+    }).init();
+    new Wonderful.Checkbox({
+      targetClass: 'wonderful-check-color-maroon',
+      bfColor: 'maroon',
+      afColor: 'maroon'
+    }).init();
+
     $(function() {
       $('[data-toggle="tooltip"]').tooltip();
     });
+
+    function gotoTop() {
+      document.querySelector('#goto-top').classList.add('go-top-animation');
+      document.querySelector('#top').scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+    document.onscroll = function() {
+      if (window.scrollY > 200) {
+        document.querySelector('#goto-top').classList.add('show');
+      } else {
+        document.querySelector('#goto-top').classList.remove('go-top-animation');
+        document.querySelector('#goto-top').classList.remove('show');
+      }
+    };
   </script>
 </html>

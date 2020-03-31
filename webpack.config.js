@@ -1,6 +1,5 @@
 // const webpack = require('webpack');
 const path = require('path');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 
@@ -24,8 +23,6 @@ module.exports = {
   },
 
   plugins: [
-    new CleanWebpackPlugin(),
-    // new webpack.optimize.UglifyJsPlugin()
     new HtmlWebpackPlugin({ template: '../example/index.html', inject: 'body' }),
     new CopyPlugin([{ from: 'css/*.css', to: '../dist' }])
   ],

@@ -6,15 +6,6 @@ section {
   margin-bottom: 80px;
 }
 
-.wrapper {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-  width: 100%;
-  max-width: 960px;
-}
-
 .header-title-text {
   font-size: 5rem;
   letter-spacing: -5px;
@@ -76,36 +67,6 @@ section {
   font-weight: 900;
 }
 
-.list-usages {
-  counter-reset: usages;
-  list-style: none;
-}
-.list-usages li {
-  margin-bottom: 5px;
-}
-.list-usages li::before {
-  font-family: 'Font Awesome 5 Free';
-  counter-increment: usages;
-  content: '\f1b0'' ' counter(usages) '.';
-  font-size: 1.2rem;
-  font-weight: 900;
-}
-
-.element-label {
-  text-align: center;
-  padding: 10px;
-  background-color: #332513;
-  color: white;
-  font-size: 2rem;
-  /* font-weight: bold; */
-}
-
-.icon-area {
-  background-color: white;
-  border: 2px solid #332513;
-  margin-bottom: 15px;
-}
-
 .wonderful-tab-title {
   margin-bottom: -1px;
   border: 2px solid #332513 !important;
@@ -165,9 +126,6 @@ section {
   border: 2px solid #332513;
   padding: 30px;
 }
-.wonderful-form-group {
-  margin-bottom: 15px;
-}
 
 .footer-author {
   text-decoration: none;
@@ -176,41 +134,4 @@ section {
 .footer-author:hover {
   text-decoration: none;
   color: steelblue;
-}
-
-.state-elements-wrapper {
-  position: relative;
-}
-.state-elements-overlay {
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.go-top {
-  position: fixed;
-  /* display: none; */
-  font-size: 1.5rem;
-  right: 50px;
-  bottom: 100px;
-  z-index: 99999;
-}
-
-@keyframes upto_bone {
-  0% {
-  }
-  100% {
-    transform: translate(0px, -1500px) rotate(360deg);
-  }
-}
-.go-top-animation {
-  animation-name: upto_bone;
-  animation-timing-function: linear;
-  /* animation-timing-function: ease; */
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-  /* animation: 3s linear 1s infinite alternate slidein; */
 }

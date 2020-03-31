@@ -10,6 +10,6 @@ module.exports = merge(common, {
     openPage: 'index.html', //自動で指定したページを開く
     contentBase: path.join(__dirname), // HTML等コンテンツのルートディレクトリ
     watchContentBase: true, //コンテンツの変更監視をする
-    port: 3000 // ポート番号  }
+    port: 3000 // ポート番号
   }
 });
