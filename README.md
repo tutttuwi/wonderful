@@ -27,6 +27,13 @@ no configuration. just import **wonderful.js**.
 <script type="text/javascript" src="wonderful.js"></script>
 ```
 
+## Configration
+
+### Checkbox
+
+
+
+
 ## :clap: Quotation
 
 header image : <https://illustrain.com/?p=17421>
